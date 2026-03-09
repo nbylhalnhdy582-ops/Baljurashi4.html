@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>السعودية بعيون التقنية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 id="mainTitle">بلجرشي</h1>
+
+<!-- زر الهمبرغر -->
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav>
+  <ul id="menu" class="menu">
+    <li><a href="#mainTitle">الرئيسية</a></li>
+    <li><a href="#places">الأماكن المشهورة في بلجرشي</a></li>
+    <li><a href="#photos">صور بلجرشي</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+<p>
+بلجرشي هي <mark>محافظة سعودية تتبع منطقة الباحة</mark>
+وتعتبر المركز التجاري الثقافي والاقتصادي الأبرز في المنطقة.
+تتميز بطبيعة جبلية خلابة ومناخ معتدل صيفًا، وفيها غابات
+وأودية مثل وادي مذود بالإضافة إلى تاريخ قديم وقرى
+تاريخية مما يجعلها وجهة سياحية بارزة ومركزًا لعدد من
+الدوائر الحكومية والأسواق الشعبية مثل سوق السبت.
+</p>
+</section>
+
+<section id="places">
+<h2 class="places">الأشياء المشهورة في بلجرشي:</h2>
+<ul>
+<li>منتزه الشكران</li>
+<li>حديقة الفراشة</li>
+<li>القرى التراثية القديمة</li>
+<li>الزراعة</li>
+<li>المهرجانات الصيفية</li>
+</ul>
+</section>
+
+<section id="photos">
+<div class="image-box">
+<img src="f2.jpeg.JPG" width="250" height="200" alt="منتزه الشكران">
+<br>منتزه الشكران
+</div>
+
+<div class="image-box">
+<img src="f1.jpeg.JPG" width="250" height="200" alt="حديقة الفراشة">
+<br>حديقة الفراشة
+</div>
+</section>
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
